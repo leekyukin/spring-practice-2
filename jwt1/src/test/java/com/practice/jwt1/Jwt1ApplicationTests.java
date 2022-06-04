@@ -1,10 +1,10 @@
-package com.study.jwttest2;
+package com.practice.jwt1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JwtTest2ApplicationTests {
+class Jwt1ApplicationTests {
 
     @Test
     void contextLoads() {

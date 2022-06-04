@@ -1,13 +1,13 @@
-package com.study.jwttest2;
+package com.practice.jwt1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JwtTest2Application {
+public class Jwt1Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(JwtTest2Application.class, args);
+        SpringApplication.run(Jwt1Application.class, args);
     }
 
 }
