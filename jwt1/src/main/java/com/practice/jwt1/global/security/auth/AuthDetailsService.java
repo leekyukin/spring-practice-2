@@ -1,6 +1,6 @@
 package com.practice.jwt1.global.security.auth;
 
-import com.practice.jwt1.user.domain.exception.UserNotFoundException;
+import com.practice.jwt1.user.exception.UserNotFoundException;
 import com.practice.jwt1.user.domain.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
