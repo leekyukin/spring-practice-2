@@ -17,11 +17,11 @@ public class CreateUserRequestDto {
     @NotNull
     private String name;
 
-    public static User toEntity(CreateUserRequestDto request) {
+    public User toEntity(String password) {
         return User.builder()
-                .email(request.getEmail())
-                .password(request.getPassword())
-                .name(request.getName())
+                .email(email)
+                .password(password)
+                .name(name)
                 .authority(Authority.ROEL_USER)
                 .build();
     }

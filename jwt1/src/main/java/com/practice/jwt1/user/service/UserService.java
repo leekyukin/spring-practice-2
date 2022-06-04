@@ -5,6 +5,7 @@ import com.practice.jwt1.user.facade.UserFacade;
 import com.practice.jwt1.user.presentation.dto.request.CreateUserRequestDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,10 +16,11 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final UserFacade userFacade;
+    private final PasswordEncoder passwordEncoder;
 
     @Transactional
     public void signup(CreateUserRequestDto request) {
         userFacade.checkUser(request.getEmail());
-        userRepository.save(CreateUserRequestDto.toEntity(request));
+        userRepository.save(request.toEntity(passwordEncoder.encode(request.getPassword())));
     }
 }
