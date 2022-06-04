@@ -1,1 +1,20 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwtTest?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: jesusisking
+  profiles:
+    include: oauth
+server:
+  port: 8080
+
+
 
