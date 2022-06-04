@@ -2,6 +2,7 @@ package com.practice.jwt1.user.presentation.dto.request;
 
 import com.practice.jwt1.user.domain.User;
 import com.practice.jwt1.user.domain.type.Authority;
+import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -9,8 +10,11 @@ import lombok.Getter;
 @Builder
 public class CreateUserRequestDto {
 
+    @NotNull
     private String email;
+    @NotNull
     private String password;
+    @NotNull
     private String name;
 
     public static User toEntity(CreateUserRequestDto request) {
