@@ -12,11 +12,10 @@ public class UserController {
 
     private final UserService userService;
 
-    @PostMapping()
+    @PostMapping
     public void signup(
             @RequestBody CreateUserRequestDto request
     ) {
         userService.signup(request);
     }
-
 }
