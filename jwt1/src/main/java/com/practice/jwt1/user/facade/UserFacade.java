@@ -14,6 +14,5 @@ public class UserFacade {
     public void checkUser(String email) {
         if (userRepository.existsByEmail(email))
             throw UserAlreadyExistsException.EXCEPTION;
-
     }
 }
