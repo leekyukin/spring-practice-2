@@ -1,8 +1,7 @@
-package com.practice.jwt1.user.domain;
+package com.practice.jwt1.domain.user.domain;
 
+import com.practice.jwt1.domain.user.domain.type.Authority;
 import com.practice.jwt1.global.entity.BaseTimeEntity;
-import com.practice.jwt1.user.domain.type.Authority;
-import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

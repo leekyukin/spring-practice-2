@@ -1,4 +1,4 @@
-package com.practice.jwt1.user.domain.type;
+package com.practice.jwt1.domain.user.domain.type;
 
 import lombok.Getter;
 

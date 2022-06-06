@@ -1,7 +1,7 @@
-package com.practice.jwt1.user.presentation.dto.request;
+package com.practice.jwt1.domain.user.presentation.dto.request;
 
-import com.practice.jwt1.user.domain.User;
-import com.practice.jwt1.user.domain.type.Authority;
+import com.practice.jwt1.domain.user.domain.User;
+import com.practice.jwt1.domain.user.domain.type.Authority;
 import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;

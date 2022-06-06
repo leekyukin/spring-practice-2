@@ -1,6 +1,6 @@
 package com.practice.jwt1.global.security.auth;
 
-import com.practice.jwt1.user.domain.User;
+import com.practice.jwt1.domain.user.domain.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
