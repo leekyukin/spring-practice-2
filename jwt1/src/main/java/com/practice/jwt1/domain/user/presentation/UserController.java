@@ -1,9 +1,9 @@
-package com.practice.jwt1.user.presentation;
+package com.practice.jwt1.domain.user.presentation;
 
-import com.practice.jwt1.user.presentation.dto.request.CreateUserRequestDto;
-import com.practice.jwt1.user.presentation.dto.request.LoginRequestDto;
-import com.practice.jwt1.user.presentation.dto.response.TokenResponseDto;
-import com.practice.jwt1.user.service.UserService;
+import com.practice.jwt1.domain.user.presentation.dto.request.CreateUserRequestDto;
+import com.practice.jwt1.domain.user.presentation.dto.request.LoginRequestDto;
+import com.practice.jwt1.domain.user.presentation.dto.response.TokenResponseDto;
+import com.practice.jwt1.domain.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +31,13 @@ public class UserController {
             @RequestBody LoginRequestDto request,
             HttpServletResponse response
     ) {
-        log.error("request : {}", request);
+        log.error("1. requst : {}", request);
         return userService.login(request, response);
     }
+
+    @GetMapping("/check")
+    public String check() {
+        return "Your Token is Already Alive";
+    }
+
 }
