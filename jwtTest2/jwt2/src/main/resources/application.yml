@@ -13,3 +13,6 @@ spring:
     password: jesusisking
   profiles:
     include: oauth
+
+  jwt:
+    secret: rksksehdnflfmfdlrlwldosdvvjzlsakepdldkstodrlsmsgustlfdmstlrndckdejrkdwjfgkrpcpdltmalehsdlskfmfcpdltmalehdspclsrnemfdms
