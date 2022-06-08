@@ -1,6 +1,7 @@
 package com.practice.jwt2.domain.user.presentation;
 
 import com.practice.jwt2.domain.user.presentation.dto.request.CreateUserRequestDto;
+import com.practice.jwt2.domain.user.presentation.dto.request.LoginUserRequestDto;
 import com.practice.jwt2.domain.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,5 +21,12 @@ public class UserController {
             @RequestBody CreateUserRequestDto request
     ) {
         userService.join(request);
+    }
+
+    @PostMapping("/login")
+    public void login(
+            @RequestBody LoginUserRequestDto request
+    ) {
+        userService.login(request);
     }
 }
